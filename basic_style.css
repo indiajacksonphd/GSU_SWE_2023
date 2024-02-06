@@ -1,0 +1,411 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+span {
+    text-decoration: underline;
+}
+a, a:visited, a:hover, a:active {
+  color: white;
+}
+
+#registrat{
+	width: 500px;
+}
+
+
+table{
+	font-size: 17px;
+	width: 95%; /* Adjust the width as needed */
+	border-spacing: 10px 10px;
+	border-collapse: separate;
+}
+
+/****************************************** Navigation Bar **************************************************/
+.modal-busy {
+	position: fixed;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: Black;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	-moz-opacity: 0.8;
+}
+.center-busy {
+	z-index: 1000;
+	margin: 300px auto;
+	padding: 0px;
+	width: 130px;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-moz-opacity: 1;
+}
+.center-busy img {
+	height: 128px;
+	width: 128px;
+}
+
+
+.main{
+	display: block;
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	background-color: white;
+	line-height: 20px;
+	width: 700px;
+	height: 200px;
+}
+/****************************************** Navigation Bar **************************************************/
+
+nav{
+    background: #db6056;
+	height: 80px;
+	width: 100%;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+label.logo{
+	color: black;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li {
+	color: white;
+	font-size: 25px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	background: none!important;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+	color: #7d0410;
+	font-size: 25px;
+	text-transform: uppercase;
+	background: none!important;
+    border: none;
+    cursor: pointer;
+}
+
+.top .logo{
+	
+	padding-top: 10px;
+}
+
+
+
+.checkbtn{
+	/*font-size: 30px;*/
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+.closebtn{
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.center-busy2 {
+	display: none;
+}
+
+.center-busy3 {
+	display: none;
+}
+
+.center-busy3 ul li{
+	display: block;
+}
+
+.arrow {
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 3px;
+  }
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+  }
+
+
+/****************************************** Body **************************************************/
+
+
+.body-content{
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+.body-content h1{
+	margin-right: 50px;
+	color: white;
+}
+
+.inner-body{
+	height: 100%;
+	width: 100%;
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.body-item1{
+	height: 100%;
+	width: 100%;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+/****************************************** Footer **************************************************/
+
+.footer{
+	width: 100%;
+	background: #db6056;
+	display: block;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.inner-footer{
+	width: 95%;
+	margin: auto;
+	padding: 30px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	
+}
+
+.footer-item1{
+	width: 17%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+.footer-item1 h1{
+	color: black;
+}
+
+.footer-item2{
+	width: 33%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+.footer-item2 a, a:visited, a:hover, a:active{
+	color: white;
+	font-size: 17px;
+}
+
+.footer-item4{
+	width: 30%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: white;
+}
+
+.footer-item5{
+	width: 20%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+.footer h1{
+	padding: 10px 0;
+	font-size: 25px;
+	color: black;
+	text-transform: uppercase;
+}
+
+.footer-items p{
+	color: black;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+.footer h2{
+	margin: 10px 0;
+	color: black;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.border{
+	height: 2px;
+	width: 40px;
+	background: #7d0410;
+}
+
+.footer ul{
+	list-style: none;
+	color: black;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+
+.footer ul a {
+	text-decoration: none;
+	outline: none;
+	color: #7d0410;
+	transition: 0.3s;
+}
+
+
+.footer ul a:hover{
+	color: white;
+}
+
+.footer ul li{
+	margin: 10px 0;
+	height: 25px;
+}
+
+.footer li i{
+	margin-right: 20px;
+}
+
+.links{
+	color: white;
+	font-size: 17px;;
+}
+
+.links a{
+	color: #7d0410;
+	font-size: 17px;;
+}
+
+.contact-form .email-contact-input{
+	background: #272727;
+	color: #bebdbd;
+	margin-bottom: 10px;
+	line-height: 0.5rem;
+	padding: 0.90rem 1.4rem;
+	border: none;
+}
+
+.contact-form .email-contact-input:focus{
+	background: #1a1a1a;
+}
+
+.contact-form .message-contact-input{
+	background: #272727;
+	color: #bebdbd;
+	
+	padding: 0.90rem 1.4rem;
+	border: none;
+}
+
+.contact-form .message-contact-input:focus{
+	background: #1a1a1a;
+}
+
+.new_btn{
+	padding: .5rem 1rem;
+	background: #db6056;
+	color: white;
+	border-radius: 1px solid transparent;
+	border-radius: .25rem;
+	font-size: 25px;
+	cursor: pointer;
+	margin-top: 100px;
+}
+
+.new_btn:hover{
+	color: white !important;
+	background: #7d0410;
+}
+
+/* Styles for a disabled button */
+.new_btn:disabled {
+    background-color: lightgray;
+    color: #999;
+    cursor: not-allowed;
+    /* Add any other styles you want for disabled buttons */
+}
+
+.btn{
+	padding: .5rem 1rem;
+	background: #db6056;
+	color: white;
+	border-radius: 1px solid transparent;
+	border-radius: .25rem;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.btn:hover{
+	color: white !important;
+	background: #7d0410;
+}
+
+.btn .btn-big{
+	padding: .7rem 1.3rem;
+	line-height: 1.3rem;
+}
+
+.contact-btn{
+	float: right;
+}
+
+.social-media{
+	margin: 20px;
+}
+
+.social-media a{
+	color: white;
+	margin-right: 25px;
+	font-size: 22px;
+	text-decoration: none;
+	transition: 0.3s linear;
+}
+
+.social-media a:hover{
+	color: #7d0410;
+}
+
+.footer-bottom{
+	padding: 10px;
+	background: #510008;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+.footer-item2 h1 {
+	color: black;
+}
