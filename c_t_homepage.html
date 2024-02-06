@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<title>Courier Tracker</title>
+	<!-- Javascript SDK-->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  <script src="amazon-cognito-auth.min.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script> 
+  <script src="amazon-cognito-identity.min.js"></script>  
+  <script src="config.js"></script>
+  <script>
+	var seconds = 5;
+	function displaySeconds(){
+		seconds -= 1;
+		document.getElementById("log").innerText = 'Successfully verified code! This page will be redirected in ' + seconds + ' seconds...';
+               // logMessage('Successfully verified code! This page will be redirected in ' + seconds + ' seconds...');
+	}
+  </script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.5/chosen.jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+<link rel="shortcut icon" type="image/png" href="c_t_logo.png">
+<link rel="stylesheet" href = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.5/chosen.min.css">
+<link rel="stylesheet" href="basic_style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  </head>
+
+	
+  <body>
+	<nav class="top">
+		<a class ="logo" href = "#"><img src ="c_t_logo_inside.png" style= "width:60px; height:60px; padding-top: 20px;" alt ="Home"></a>
+		<h3 id= "welcome_back" style="margin-left: 40%; display: inline; z-index: 99; color: white;">Courier Tracker</h3>
+		<input type = "checkbox" id="check" style="border: purple solid 1px;">
+		<ul>
+			<li><a href="partner_registration.html">Businesses</a></li> 
+			<li><a href="driver_registration.html">Drivers</a></li>
+		</ul>
+	</nav>
+	  
+	<div class="body-content">
+		<div class="inner-body"style="top: 0;">
+			<div class="body-item1">
+	  			<center>
+                    <video autoplay loop muted width = "1280" height="960">
+                        <source src="https://courier-tracker.s3.amazonaws.com/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+				</center>
+			</div>
+		</div>
+	</div>
+	    <!------------------------------------------- FOOTER ----------------------------> 
+		<div class="footer">
+			<div class="inner-footer">
+				<div class="footer-item2">
+					<h1>Courier Tracker</h1>		
+					<div class="border"></div>	
+					<div class="links">	
+						
+						<p>Welcome to Courier Tracker, your trusted partner for seamless merchandise delivery in Metro Atlanta. At Courier Tracker, we understand the importance of reliable and efficient shipping solutions for small businesses. Whether you're a local boutique, an e-commerce store, or a neighborhood bakery, we've got you covered. Our dedicated team of couriers ensures that your products reach your customers on time, every time. With real-time tracking and a commitment to customer satisfaction, we make shipping easy and hassle-free.</p>
+					</div>
+				</div>
+	
+				<div class="footer-item4">
+					<h1>DIVERSITY STATEMENT</h1>
+					<div class="border"></div>
+					<div class="links">	
+					<p>At Courier Tracker, we take immense pride in our commitment to being an equal opportunity employer. We firmly believe that diversity and inclusion are not just principles but essential drivers of our success. We provide fair and equal opportunities to all employees and prospective candidates, irrespective of their race, gender, sexual orientation, religion, disability, or any other characteristic protected by applicable laws. Our dedication to fostering a diverse and inclusive workplace extends throughout our organization, from our hiring practices to our daily operations. We actively promote an environment where every individual feels valued, respected, and empowered to contribute their unique perspectives and talents. It's our firm belief that by embracing diversity, we can better serve our customers, fuel innovation, and create a workplace where everyone can thrive and reach their full potential."</p>
+					</div>
+				</div>
+					<div class="footer-item5">
+					<h1>Contact Us</h1>
+					<div class="border"></div>
+					<div class="social-media">
+					<a href="https://www.facebook.com/profile.php?id=61553963221750"><i class="fa fa-facebook" aria-hidden = "true"></i></a>
+					<a href="https://instagram.com/couriertracker2023?igshid=NGVhN2U2NjQ0Yg=="><i class="fa fa-instagram" aria-hidden = "true"></i></a>
+					<a href="mailto:couriertracker2023@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					</div>	
+				</div>
+			</div>
+		</div>
+			
+			<div class="footer-bottom">
+				Copyright &copy; Courier Tracker 2023™ || Street Fighters.
+	
+				<!--digital clock start-->
+				<div class="datetime">
+					<div class="date">
+						<span id="dayname">Day</span>,
+						<span id="month">Month</span>
+						<span id="daynum">00</span>,
+						<span id="year">Year</span>
+					||
+						<span id="hour">00</span>:
+						<span id="minutes">00</span>:
+						<span id="seconds">00</span>
+						<span id="period">AM</span>
+					</div>
+				</div>
+			</div>
+
+<script src="c_t_homepage.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script>
+ 
+</script>
+ </body>
+  
+</html>
+
+
+
+
+
+
+

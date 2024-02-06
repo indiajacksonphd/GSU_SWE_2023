@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Driver Profile</title>
+    </title>
+</head>
+<body>
+    <div align="center">
+        <h1>Save and View a Driver Profile</h1>
+        <br>
+        <input type="text" name="firstname" id="fname" placeholder="First Name">
+        <br>
+        <br>
+        <input type="text" name="lastname" id="lname" placeholder="Last Name">
+        <br>
+        <br>
+        <input type="text" name="driverage" id="driverage" maxlength="9" placeholder="Drivers License">
+        <br>
+        <br>
+        <input type="text" name="address" id="address" placeholder="Address">
+        <br>
+        <br>
+        <input type="tel" name="phonenumber" id="phonenumber" maxlength="10" placeholder="Phone Number">
+        <br>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <br> 
+        <br> Profile Image:
+        <input type="file" name="profileimage" id="profileimage" accept="image/*">
+        <br>
+        <!-- Image Preview -->
+        <img id="imagePreview" src="#" alt="Image Preview" style="display: none;" />     
+        <br><br>
+        <input type="submit" id="saveprofile" value="Save Profile">
+        <br>
+        <p id="profileSaved"></p>
+        <br>
+        <input type="submit" id="getprofile" value="View all the Driver Profiles">
+        <br>
+        <div id="showProfile">
+            <table id="driverProfile">
+                <colgroup>
+                    <col style="width:15%">
+                    <col style="width:15%">
+                    <col style="width:15%">
+                    <col style="width:10%">
+                    <col style="width:20%">
+                    <col style="width:15%">
+                    <col style="width:10%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>Driver ID</th>
+                        <th>First name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Image</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="driverProfile.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+</body>
+</html>
