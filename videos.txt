@@ -1,0 +1,4 @@
+# videos in .mov and .mp4
+
+https://courier-tracker.s3.amazonaws.com/video.mov
+https://courier-tracker.s3.amazonaws.com/video.mp4
